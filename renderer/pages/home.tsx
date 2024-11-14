@@ -25,15 +25,15 @@ export default function HomePage() {
         <Link href={'/main'}>
           <Image src="/images/sangdam.png" alt="sangdam" width={256} height={256} />
         </Link>
-      </div>
-      <div>
-        <button
-          onClick={() => {
-            window.ipc.send('message', 'Hello');
-          }}>
-          Test IPC
-        </button>
-        <p>{message}</p>
+        <div>
+          <button
+            onClick={() => {
+              window.ipc.send('message', 'Hello');
+            }}>
+            Test IPC
+          </button>
+          <p>{message}</p>
+        </div>{' '}
       </div>
     </React.Fragment>
   );
